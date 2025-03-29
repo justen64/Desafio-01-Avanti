@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 01</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../components/carrossel/styles.css" />
+  </head>
+  <body>
+    <section class="descontoContainer">
+      <p>
+        Ganhe <span class="desconto">R$10,00</span> de desconto no seu primeiro
+        pedido. Utilize o cupom <strong>DESCONTO10</strong>
+      </p>
+    </section>
+    <header class="main-header">
+      <div class="container">
+        <img
+          src="../../assets/Logo-Avanti.png"
+          alt="Logo da Avanti"
+          class="logo"
+        />
+        <div class="PesquisaContainer">
+          <input type="text" id="campoBusca" placeholder="Digite aqui o que você procura" />
+          <button id="botaoBusca">
+            <img class="imgNavBar" src="../../assets/searchIcon.png" alt="Ícone de busca" />
+          </button>
+        </div>
+        <div id="resultadoBusca" style="margin-top: 10px; color: #333; font-size: 14px;"></div>
+        <div class="usuarioContainer">
+          <div class="usuario">
+            <span>
+              <img class="imgNavBar" src="../../assets/person.png" alt="" />
+            </span>
+            <p>
+              Olá,<br />
+              <strong>Nome cliente!</strong>
+            </p>
+          </div>
+          <div class="carrinho">
+            <span>
+              <img class="imgNavBar" src="../../assets/carrinho.png" alt="" />
+            </span>
+            <span class="notificacao">2</span>
+          </div>
+        </div>
+      </div>
+      <nav class="navMenu">
+        <ul>
+          <li class="dropdown">
+            <button class="dropdown-toggle">☰ Todas as Categorias</button>
+            <div class="mega-menu">
+              <div class="categorias">
+                <ul>
+              <!-- feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico -->
+                  <li><strong>Departamento </strong></li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                </ul>
+                <ul>
+                  <li><strong>Departamento </strong></li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                </ul>
+                <ul>
+                  <li><strong>Departamento </strong></li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                  <li>Categoria</li>
+                </ul>
+              </div>
+              <div class="imagem-promocional">
+                <div>
+
+                  <p>Confira os <br> Produtos <br>Que acabaram <br>De chegar</p>
+                  <button class="ver-todos">VER TODOS</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="departamento-dropdown">
+            <a href="#">Departamento</a>
+          <li><a href="#">Departamento</a></li>
+          <li><a href="#">Departamento</a></li>
+          <li><a href="#">Departamento</a></li>
+          <li><a href="#">Departamento</a></li>
+          <li><a href="#">Departamento</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="caixaPrincipal">
+      <div class="containerPrincipal">
+        <section class="containerOferta">
+          <img class="cadeiraImg" src="../../assets/cadeira.png" alt="" />
+          <div class="containerTextoOferta">
+            <h1><strong>SUPER</strong>SALE</h1>
+            <p>itens selecionados com até</p>
+            <p><strong>50% OFF</strong></p>
+          </div>
+        </section>
+      </div>
+      <section class="containerCards">
+        <h4>Lançamentos</h4>
+        <div id="products-container" class="product-grid"></div>
+      </section>
+      <section class="infoCopo">
+        <div class="image-container">
+          <img
+            class="imgCopo"
+            src="../../assets/copoAvanti.png"
+            alt="Copo Avanti"
+          />
+        </div>
+        <div class="text-container">
+          <h2>LOREM IPSUM</h2>
+          <p>  <!-- feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico -->
+
+            Duis consectetur metus nec lacus auctor dignissim.<br />
+            Mauris vitae finibus dui. Mauris laoreet lacus ut<br />
+            eleifend viverra. Cras efficitur volutpat dui, in lobortis<br />
+            metus lacinia sit amet. Sed lacinia pharetra magna, vel<br />
+            pulvinar ligula hendrerit a. Maceenas fringilla porttitor<br />
+            tortor eget lacinia. Donec sollicitudin euismod orci,<br />
+            auctor fringilla magna consequat interdum. Fusce<br />
+            sagittis elit a libero commodo egestas efficitur id<br />
+            augue.
+          </p>
+          <p>
+            Duis consectetur metus nec lacus auctor dignissim.<br />
+            Mauris vitae finibus dui. Mauris laoreet lacus ut<br />
+            eleifend viverra. Cras efficitur volutpat dui, in lobortis<br />
+            metus lacinia sit amet. Sed lacinia pharetra magna, vel<br />
+            pulvinar ligula hendrerit a. Maceenas fringilla porttitor<br />
+            tortor eget lacinia. Donec sollicitudin euismod orci,<br />
+            auctor fringilla magna consequat interdum. Fusce<br />
+            sagittis elit a libero commodo egestas efficitur id<br />
+            augue.
+          </p>
+        </div>
+      </section>
+      <section class="infoCozinha">
+        <div class="cozinhaContainer">
+          <div class="textoCozinha">
+            <h1>LOREM IPSUM</h1>
+            <div class="containerLocalizacao">
+                <img class="imgLocalizacao" src="../../assets/localização.png" alt="">
+                <p>
+                    Aenean massa. Cum sociis natoque<br />
+                    penatibus et magnis dis parturient<br />
+                    montes, nasceur ridiculus mus. Donec<br />
+                    quam felis, ultricies nec, pellentesque<br />
+                    eu, pretium quis, sem.
+                </p>
+            </div>
+
+            <div class="containerLocalizacao">
+                <img class="imgLocalizacao" src="../../assets/localização.png" alt="">
+                <!-- feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico -->
+                <p>
+                    Aenean massa. Cum sociis natoque<br />
+                    penatibus et magnis dis parturient<br />
+                    montes, nasceur ridiculus mus. Donec<br />
+                    quam felis, ultricies nec, pellentesque<br />
+                    eu, pretium quis, sem.
+                </p>
+            </div>
+
+            <div class="containerLocalizacao">
+                <img class="imgLocalizacao" src="../../assets/localização.png" alt="">
+                <p>
+                    Aenean massa. Cum sociis natoque<br />
+                    penatibus et magnis dis parturient<br />
+                    montes, nasceur ridiculus mus. Donec<br />
+                    quam felis, ultricies nec, pellentesque<br />
+                    eu, pretium quis, sem.
+                </p>
+            </div>
+          </div>
+
+          <div class="image-container">
+            <img
+              src="../../assets/copoCozinha.png"
+              alt="Copo de cozinha Avanti"
+              class="imgCopo"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="infoCopo">
+        <div class="image-container">
+          <img
+            class="imgCopo"
+            src="../../assets/copoAvanti.png"
+            alt="Copo Avanti"
+          />
+        </div>
+        <div class="text-container">
+          <h2>LOREM IPSUM</h2>
+          <p>
+            Duis consectetur metus nec lacus auctor dignissim.<br />
+            Mauris vitae finibus dui. Mauris laoreet lacus ut<br />
+            eleifend viverra. Cras efficitur volutpat dui, in lobortis<br />
+            metus lacinia sit amet. Sed lacinia pharetra magna, vel<br />
+            pulvinar ligula hendrerit a. Maceenas fringilla porttitor<br />
+            tortor eget lacinia. Donec sollicitudin euismod orci,<br />
+            auctor fringilla magna consequat interdum. Fusce<br />
+            sagittis elit a libero commodo egestas efficitur id<br />
+            augue.
+          </p>
+          <p>
+            Duis consectetur metus nec lacus auctor dignissim.<br />
+            Mauris vitae finibus dui. Mauris laoreet lacus ut<br />
+            eleifend viverra. Cras efficitur volutpat dui, in lobortis<br />
+            metus lacinia sit amet. Sed lacinia pharetra magna, vel<br />
+            pulvinar ligula hendrerit a. Maceenas fringilla porttitor<br />
+            tortor eget lacinia. Donec sollicitudin euismod orci,<br />
+            auctor fringilla magna consequat interdum. Fusce<br />
+            sagittis elit a libero commodo egestas efficitur id<br />
+            augue.
+          </p>
+        </div>
+      </section>
+      <section class="containerCards">
+        <h4>Lançamentos</h4>
+        <div id="products-container2" class="product-grid"></div>
+      </section>
+      <section class="contatoContainer">
+        <div class="contatoContent">
+          <p>Entre em contato conosco e verifique a disponibilidade para sua região!</p>
+        </div>
+      </section>
+
+      <section class="newsletter-horizontal">
+        <h1>Cadastre-se na nossa newsletter</h1>
+        
+        <form class="newsletter-form-horizontal">
+          <input type="text" placeholder="Digite seu nome">
+          <input type="email" placeholder="Digite seu e-mail">
+                        <!-- feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico -->
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="privacy-check-horizontal">
+            <label for="privacy-check-horizontal">Estou de acordo com a<a href="#"> Política de Privacidade</a></label>
+          </div>
+          
+          <button type="submit" class="submit-btn-horizontal">Cadastrar</button>
+        </form>
+      </section>
+    </main>
+    <footer class="avanti-footer">
+      <div class="footer-main">
+        <div class="footer-grid">
+          <div class="footer-col logo-social-col">
+            <div class="footer-logo-container">
+              <img src="../../assets/Logo-Avanti.png" alt="AVANTI" class="footer-logo">
+            </div>
+            <div class="social-media">
+              <a href="http://instagram.com/penseavanti/" target="_blank"><img src="../../assets/instagram.png" alt="Instagram"></a>
+              <a href="https://www.facebook.com/penseavanti?locale=pt_BR" target="_blank"><img src="../../assets/facebook.png" alt="Facebook"></a>
+              <a href="https://www.youtube.com/channel/UCssWsl1C3_-JQXd8H1LOjiA" target="_blank"><img src="../../assets/youtube.png" alt="YouTube"></a>
+              <a href="#"><img src="../../assets/tiktok.png" alt="TikTok"></a>
+            </div>
+          </div>
+    
+          <div class="footer-col">
+            <h3>AVANTI</h3>
+            <ul>
+              <li><a href="#">Individualista</a></li>
+              <li><a href="#">Sober Nós</a></li>
+              <li><a href="#">Mostral Lúdica</a></li>
+              <li><a href="#">Parceria & Segurança</a></li>
+              <li><a href="#">Termos e Condições</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-col">
+            <h3>Central de ajuda</h3>
+            <ul>
+              <li><a href="#">Fale Conosco</a></li>
+              <li><a href="#">Trocas e Devoluções</a></li>
+              <li><a href="#">Termos e Privacidade</a></li>
+              <li><a href="#">Formas de Pagamento</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-col">
+            <h3>Atendimento</h3>
+            <ul>
+              <li>Telefone: (00) 1234-5678</li>
+              <li>E-mail: contato@avanti.com.br</li>
+              <li>Horário de atendimento:</li>
+              <li>Segunda a Sábado: 07h às 23h</li>
+              <li>Domingos e Feriados: 07h às 23h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div class="payment-section">
+        <div class="payment-methods">
+          <img src="../../assets/amex.png" alt="Visa">
+          <img src="../../assets/master.png" alt="Mastercard">
+          <img src="../../assets/visa.png" alt="Elo">
+          <img src="../../assets/hiper.png" alt="hipetcard">
+          <img src="../../assets/elo.png" alt="elo">
+          <img src="../../assets/cartaoMarca.png" alt="cartaoMarca">
+          <img src="../../assets/paypal.png" alt="paypal">
+          <img src="../../assets/pix.png" alt="pix">
+          <img src="../../assets/boleto.png" alt="Boleto">
+        </div>
+      </div>
+    
+      <div class="copyright">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+      </div>
+                  <!-- feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico -->
+
+      <div class="footer-bottom">
+        <img src="../../assets/lets.png" alt="Visa">
+        <img src="../../assets/pci.png" alt="Visa">
+        <img class="avtLogo" src="../../assets/Logo-Avanti.png" alt="Visa">
+        <img src="../../assets/vtex.png" alt="Visa">
+      </div>
+    </footer>
+    <script src="../../script/script.js"></script>
+    <script src="../../components/carrossel/carrossel.js"></script>
+  </body>
+</html>

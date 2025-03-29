@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif; 
+   }
+  
+  .descontoContainer {
+    background: #005CFF;
+    color: #FFF;
+    text-align: center;
+    padding: .9375rem 0;
+    font-size: .875rem;
+    line-height: 1.375rem;
+    letter-spacing: 0%;
+  }
+  .descontoContainer .desconto {
+    background-color: #6220C1;
+    font-weight: 700;
+  }
+  
+  .main-header {
+    box-shadow: 0 .125rem .3125rem rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    position: relative;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+  
+  .menu {
+    color: #333;
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .logo {
+    max-width: 7.5rem;
+  }
+  
+  .PesquisaContainer {
+    border: .0625rem solid #ccc;
+    display: flex;
+    border-radius: .3125rem;
+    overflow: hidden;
+    width: 50%;
+  }
+  .PesquisaContainer input {
+    border: none;
+    padding: .5rem;
+    outline: none;
+    width: 100%;
+  }
+  .PesquisaContainer button {
+    border: none;
+    background: none;
+    padding: .5rem;
+    cursor: pointer;
+  }
+  
+  .usuarioContainer {
+    display: flex;
+    align-items: center;
+    gap: .9375rem;
+  }
+  .usuarioContainer .usuario {
+    display: flex;
+    align-items: center;
+    gap: .3125rem;
+  }
+  .usuarioContainer .carrinho {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .usuarioContainer .carrinho .notificacao {
+    background: #005CFF;
+    color: #FFF;
+    font-size: .625rem;
+    border-radius: 50%;
+    width: .9375rem;
+    height: .9375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -0.3125rem;
+    right: -0.625rem;
+  }
+          /* feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico */
+
+  .navMenu {
+    padding-top: 1.5625rem;
+  }
+
+  .navMenu ul li a {
+    color: #333;
+    font-weight: bold;
+  }
+
+.navMenu ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.navMenu ul li {
+    position: relative;
+}
+  
+
+  .imgNavBar{
+    width: 1.5625rem;
+    height: 1.5625rem;
+  }
+
+  .dropdown-toggle {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: .3125rem;
+}
+
+.imgCategoria{
+    width: 1.25rem;
+    height: 15.625rem;
+}
+.mega-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 62.5rem;
+  background: white;
+  box-shadow: 0 .25rem .375rem rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  border-radius: .3125rem;
+  justify-content: space-between;
+  flex-direction: row;
+  z-index: 1000;
+}
+
+
+
+.categorias ul {
+    padding: 0 .625rem;
+}
+
+.categorias li {
+    padding: .3125rem 0;
+}
+
+.categorias-menu {
+  width: 62.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.categorias-menu ul {
+  width: 100%;
+  padding: 0 .625rem;
+}
+
+.categorias-menu li {
+  padding: .5rem 0;
+  border-bottom: .0625rem solid #eee;
+}
+
+.categorias-menu li:last-child {
+  border-bottom: none;
+}
+
+.imagem-promocional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .625rem;
+  background-image: url("../../assets/copoCozinha.png");
+  background-size: cover;
+  width: 9.375rem;
+  border-radius: 0.9375rem;
+}
+
+.imagem-promocional p {
+  color: #FFFFFF;
+  
+}
+
+.imgCategoria {
+  width: 12.5rem;
+  height: 15.625rem;
+  object-fit: cover;
+  border-radius: .25rem;
+}
+
+.ver-todos {
+  display: block;
+  margin: .625rem auto;
+  padding: .5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: .25rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.imgNavBar {
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+
+.dropdown-toggle:hover,
+.navMenu ul li a:hover {
+  color: #0056b3;
+}
+
+.ver-todos:hover {
+  background: #003d99;
+}
+
+.imagem-promocional img {
+    width: 100%;
+    border-radius: .3125rem;
+}
+
+
+.dropdown:hover .mega-menu {
+    display: flex;
+}
+
+
+.containerPrincipal{
+    display: flex;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+
+.containerOferta{
+    display: flex;
+    background-color: #E7E7EA;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    padding: 2rem 0;
+}
+          /* feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico */
+
+.cadeiraImg{
+    width: 45%;
+    height: 70%;
+    margin-left: 5rem;
+}
+
+
+.containerTextoOferta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3.125rem;
+}
+
+.containerTextoOferta p {
+    color: #005CFF;
+}
+
+.containerCards{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 5rem;
+}
+
+.infoCopo {
+    display: flex;
+    max-width: 75rem;
+    margin: 2rem auto;
+    gap: 2.5rem;
+    align-items: center; 
+    padding: 0 1.25rem;
+}
+
+.imgCopo {
+    background-color: #C2C2C2;
+    width: 100%;
+    max-width: 31.25rem;
+    height: auto;
+    object-fit: cover; 
+    border-radius: .5rem; 
+}
+
+.infoCopo p {
+    font-size: 1rem;
+    line-height: 1.6; 
+    color: #333; 
+    text-align: justify;
+    max-width: 37.5rem;
+}
+
+.infoCozinha{
+    display: flex;
+    min-width: 100%;
+    margin: 2rem auto;
+    gap: 3.125rem;  
+    align-items: center; 
+    justify-content:  center;
+    background-color: #DEDEDE;
+    padding-top: 1.875rem;
+}
+
+.cozinhaContainer{
+    display: flex;
+    gap: 9.375rem;  
+
+}
+
+.textoCozinha{
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+}
+.textoCozinha h1{
+    align-self: flex-end;
+}
+
+.containerLocalizacao{
+    display: flex;
+    gap: .9375rem;
+    align-items: center;
+    justify-content: end;
+}
+
+.imgLocalizacao{
+    width: 12%;
+    height: 42%;
+}
+
+.contatoContainer {
+  display: flex;
+  width: 100%;
+  min-height: 50rem;
+  background-image: url("../../assets/marca.png");
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contatoContent {
+min-width: 100%;
+background-color: #005CFF;
+color: #FFFFFF;
+margin-top: 15.625rem;
+height: 5rem;
+}
+
+.contatoContent p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f5f5f5;
+}
+
+.newsletter-horizontal {
+  display: flex;
+  min-width: 100%;
+  min-height: 25rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.newsletter-horizontal h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.875rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.newsletter-form-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .625rem;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 10rem;
+  background-color: #DEDEDE;
+  border-radius: .9375rem;
+}
+
+.newsletter-form-horizontal input[type="text"],
+.newsletter-form-horizontal input[type="email"] {
+  padding: .75rem .9375rem;
+  border: .0625rem solid #ccc;
+  border-radius: .25rem;
+  font-size: 1rem;
+  min-width: 11.25rem;
+  max-width: 20rem;
+}
+          /* feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico */
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: .875rem;
+  margin: 0 .625rem;
+}
+
+.checkbox-container input {
+  margin-right: .5rem;
+}
+
+.checkbox-container a {
+  color: #005CFF;
+  text-decoration: none;
+}
+
+.checkbox-container a:hover {
+  text-decoration: underline;
+}
+
+.submit-btn-horizontal {
+  background-color: #005CFF;
+  color: white;
+  border: none;
+  padding: .75rem 1.5625rem;
+  border-radius: .25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.submit-btn-horizontal:hover {
+  background-color: #003d99;
+}
+
+
+.avanti-footer {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Arial, sans-serif;
+  padding: 2.5rem 1.25rem;
+  border-top: .0625rem solid #e1e1e1;
+}
+
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.875rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+
+.logo-social-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer-logo {
+  height: 50%;
+ 
+}
+
+.social-media {
+  display: flex;
+  gap: 2.1875rem;
+}
+
+.social-media a img {
+  height: 50%;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-media a:hover img {
+  transform: translateY(-0.1875rem);
+}
+
+.footer-col {
+  margin-bottom: 1.5rem;
+}
+
+
+.footer-col h3 {
+  color: #0056b3;
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  margin-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.footer-col a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.payment-section {
+  text-align: center;
+  margin: 2.5rem 0 1.875rem;
+}
+          /* feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico */
+
+.payment-methods {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.payment-methods img {
+  height: 1.5625rem;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.payment-methods img:hover {
+  opacity: 1;
+}
+
+.copyright {
+  max-width: 75rem;
+  margin: 0 auto 1.875rem;
+  text-align: center;
+  font-size: .75rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+
+.footer-bottom {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 1.875rem;
+  padding-top: 1.25rem;
+  border-top: .0625rem solid #e1e1e1;
+}
+
+.footer-bottom span {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.footer-bottom img {
+  height:30px;
+}
+
+.avtLogo{
+  width: 5.9375rem;
+  height: 5.3125rem;
+}
+
+
+@media screen and (min-width: 1200px) {
+  :root {
+      font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  :root {
+      font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+      font-size: 14px;
+  }
+  
+  .container {
+      flex-wrap: wrap;
+      padding: 0 1rem;
+  }
+  
+  .PesquisaContainer {
+      width: 100%;
+      order: 3;
+      margin-top: 1rem;
+  }
+  
+  .navMenu ul {
+      flex-wrap: wrap;
+  }
+  
+  .mega-menu {
+      width: 100%;
+      left: 0;
+      right: 0;
+  }
+            /* feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico */
+
+  .footer-grid {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+      font-size: 13px;
+  }
+  
+  .menu {
+      display: block;
+  }
+  
+  .navMenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.1);
+  }
+  
+  .navMenu.active {
+      display: block;
+  }
+  
+  .navMenu ul {
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+  
+  .dropdown-toggle {
+      width: 100%;
+      justify-content: space-between;
+  }
+  
+
+  
+  .cadeiraImg {
+      width: 80%;
+      height: auto;
+      margin: 1rem 0 0 0;
+  }
+  
+  .containerTextoOferta {
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+  }
+  
+  .infoCopo, 
+  .cozinhaContainer {
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+  
+  .textoCozinha h1 {
+      align-self: center;
+  }
+  
+  .containerLocalizacao {
+      justify-content: center;
+  }
+  
+  .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+  }
+  
+  .newsletter-form-horizontal {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+      font-size: 12px;
+  }
+  
+  .containerCards {
+      padding: 2rem 1rem;
+  }
+  
+  .contatoContent {
+      margin-top: 5rem;
+  }
+  
+  .payment-methods img {
+      height: 1rem;
+  }
+}
+
+.navMenu ul li {
+  position: relative;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+          /* feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico */
+
+

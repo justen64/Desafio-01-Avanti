@@ -1,0 +1,184 @@
+#products-container {
+    padding: 2rem 0;
+    overflow: hidden;
+}
+
+.products-carousel-container {
+    display: flex;
+    align-items: center;
+    gap: .9375rem;
+    position: relative;
+}
+
+.price-container {
+    margin: .625rem 0;
+  }
+  
+  .original-price {
+    display: block;
+    font-size: 0.9rem;
+    color: #999;
+    text-decoration: line-through;
+  }
+            /* feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico */
+
+  .discount-container {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    margin: .3125rem 0;
+  }
+  
+  .current-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #005CFF;
+  }
+  
+  .discount-badge {
+    background-color: #5EC0BE;
+    color: white;
+    padding: .125rem .5rem;
+    border-radius: .25rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
+  .installments {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0 15px;
+  }
+  
+  .btn-buy {
+    background-color: #005CFF;
+    color: white;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-buy:hover {
+    background-color: #0044cc;
+  }
+  
+  .badge-new {
+    position: absolute;
+    top: .625rem;
+    left: .625rem;
+    background-color: #00264E;
+    color: white;
+    padding: .1875rem .5rem;
+    border-radius: .25rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 1;
+  }
+            /* feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico */
+
+  .card {
+    position: relative;
+  }
+
+.products-carousel {
+    width: calc(100% - 5rem);
+    overflow: hidden;
+}
+
+.products-track {
+    display: flex;
+    gap: .9375rem;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+
+.product-card {
+    flex: 0 0 calc(20% - .75rem);
+    min-width: 0;
+}
+
+.card {
+    height: 100%;
+    border: none;
+    box-shadow: 0 .125rem .3125rem rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-0.3125rem);
+}
+
+.card-body {
+    background-color: #D9D9D9;
+    padding: .9375rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1rem;
+    margin-bottom: .625rem;
+}
+
+.card-text {
+    font-size: 0.8rem;
+    margin-bottom: .9375rem;
+    padding-left: .9375rem;
+}
+
+
+.carousel-control {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+          /* feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico */
+
+.carousel-control:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.carousel-control:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+@media (max-width: 1200px) {
+    .product-card {
+        flex: 0 0 calc(25% - .75rem);
+    }
+}
+
+@media (max-width: 992px) {
+    .product-card {
+        flex: 0 0 calc(33.333% - .75rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        flex: 0 0 calc(50% - .75rem);
+    }
+    
+    .products-carousel {
+        width: calc(100% - 3.75rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card {
+        flex: 0 0 100%;
+    }
+}
