@@ -1,2 +1,2 @@
 # Desafio-01-Avanti
-# rodar com e extensão Live Server
+# rodar com a extensão Live Server
