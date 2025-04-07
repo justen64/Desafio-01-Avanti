@@ -183,7 +183,7 @@
 }
 
 .dropdown-content a:nth-child(1) {
-  color: var(--primary-color);
+  color: black;
   font-weight: 700;
   font-size: 13.5px;
 }
@@ -207,7 +207,7 @@
 }
 
 .dropdown-content-categorias a:nth-child(1) {
-  color: var(--primary-color);
+  color: black;
   font-weight: 700;
 }
 
@@ -288,19 +288,19 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #005cff; /* Sua cor azul */
+  background-color: #005cff;
   border-radius: 50%;
-  padding: 20px; /* Tamanho do círculo */
+  padding: 20px; 
 }
 
-/* Cor quando hover (opcional) */
+
 .carousel-control-prev:hover .carousel-control-prev-icon,
 .carousel-control-next:hover .carousel-control-next-icon {
-  background-color: #003d99; /* Tom mais escuro */
+  background-color: #003d99; 
 }
 
 .carousel-indicators .active {
-  background-color: black !important; /* cor da bolinha ativa */
+  background-color: black !important;
   width: 14px;
   height: 14px;
 }
@@ -749,7 +749,6 @@ img {
 /* feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico */
 
 @media (min-width: 320px) {
-  /* iPhone 6/7/8 e maiores */
   .containerOferta {
     min-height: 300px;
   }
