@@ -28,19 +28,26 @@
     </section>
     <header class="main-header">
       <div class="container d-flex align-items-center justify-content-between">
-        <button
-          class="btn d-lg-none p-0 me-2"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasMenu"
-        >
-          <i class="bi bi-list fs-3"></i>
-        </button>
+      
+        <div class="d-lg-none d-flex align-items-center">
+          <button
+            class="btn p-0 me-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasMenu"
+          >
+            <i class="bi bi-list fs-3"></i>
+          </button>
+        </div>
+
+      
         <img
           src="../../assets/Logo-Avanti.png"
           alt="Logo da Avanti"
           class="logo"
         />
+
+     
         <div class="PesquisaContainer">
           <input
             type="text"
@@ -55,12 +62,15 @@
             />
           </button>
         </div>
+
+        
         <div
           id="resultadoBusca"
           style="margin-top: 10px; color: #333; font-size: 14px"
         ></div>
+
         <div class="usuarioContainer">
-          <div class="usuario">
+          <div class="usuario d-none d-lg-flex">
             <span>
               <img class="imgNavBar" src="../../assets/person.png" alt="" />
             </span>
@@ -77,6 +87,7 @@
           </div>
         </div>
       </div>
+
       <nav class="navbar custom-navbar d-none d-lg-flex">
         <div class="container-fluid d-flex justify-content-center">
           <div class="menu-navbar d-flex align-items-center gap-3">
@@ -155,7 +166,7 @@
                     <a href="#" class="link-categorias">Categorias</a>
                   </div>
                   <div class="dropdown-content-image">
-                    <img src="../../assets/image.png" alt="imagem avanti" />
+                    <img src="../../assets/verTodos.png" alt="imagem avanti" />
                   </div>
                 </div>
               </div>
@@ -203,7 +214,7 @@
                     <a href="#" class="link-categorias">Categorias</a>
                   </div>
                   <div class="dropdown-content-image-departamento">
-                    <img src="../../assets/image.png" alt="imagem avanti" />
+                    <img src="../../assets/verTodos.png" alt="imagem avanti" />
                   </div>
                 </div>
               </div>
@@ -244,10 +255,7 @@
               </div>
 
               <div class="carousel-item">
-                <div
-                  class="containerOferta d-flex align-items-center"
-                  style="background-color: #e7eaff"
-                >
+                <div class="containerOferta d-flex align-items-center">
                   <img
                     class="cadeiraImg"
                     src="../../assets/cadeira.png"
@@ -262,10 +270,7 @@
               </div>
 
               <div class="carousel-item">
-                <div
-                  class="containerOferta d-flex align-items-center"
-                  style="background-color: #e7eaff"
-                >
+                <div class="containerOferta d-flex align-items-center">
                   <img
                     class="cadeiraImg"
                     src="../../assets/cadeira.png"
@@ -279,30 +284,28 @@
                 </div>
               </div>
             </div>
-
             <button
-              class="carousel-control-prev"
+              class="carousel-arrow prev"
               type="button"
               data-bs-target="#promoCarousel"
               data-bs-slide="prev"
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Anterior</span>
+              <img
+                src="../../assets/seta-esquerda.png"
+                alt="seta para esquerda"
+              />
             </button>
+
             <button
-              class="carousel-control-next"
+              class="carousel-arrow next"
               type="button"
               data-bs-target="#promoCarousel"
               data-bs-slide="next"
             >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Próximo</span>
+              <img
+                src="../../assets/seta-direita.png"
+                alt="seta para direita"
+              />
             </button>
 
             <div class="carousel-indicators">
@@ -590,6 +593,25 @@
         <img src="../../assets/vtex.png" alt="Visa" />
       </div>
     </footer>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Departamentos</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group">
+          <li class="list-group-item"><a href="#">Departamento 1</a></li>
+          <li class="list-group-item"><a href="#">Departamento 2</a></li>
+          <li class="list-group-item"><a href="#">Departamento 3</a></li>
+          <li class="list-group-item"><a href="#">Departamento 4</a></li>
+        </ul>
+      </div>
+    </div>
     <script src="../../script/script.js"></script>
     <script src="../../components/carrossel/carrossel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

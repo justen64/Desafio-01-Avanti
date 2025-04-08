@@ -106,13 +106,13 @@ function initializeCarousel(containerId) {
   
     container.innerHTML = `
       <div class="products-carousel-container">
-        <button class="carousel-control prev">&lt;</button>
+        <button class="carousel-control prev"><img src="../../assets/seta-esquerda.png" alt="seta para esquerda"></button>
         <div class="products-carousel">
           <div class="products-track">
             ${duplicatedProducts.map(createProductCard).join("")}
           </div>
         </div>
-        <button class="carousel-control next">&gt;</button>
+        <button class="carousel-control next"> <img src="../../assets/seta-direita.png" alt="seta para direita"></button>
       </div>
     `;
   

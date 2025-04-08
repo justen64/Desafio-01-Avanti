@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateCarrossel() {
         carrossel.style.transform = `translateX(-${currentIndex * 33.333}%)`;
         
-        // Atualiza indicadores
+  
         indicadores.forEach((ind, index) => {
             ind.classList.toggle('active', index === currentIndex);
         });
@@ -78,11 +78,11 @@ document.addEventListener('DOMContentLoaded', function() {
         updateCarrossel();
     }
 
-    // Event listeners
+   
     nextBtn.addEventListener('click', nextSlide);
     prevBtn.addEventListener('click', prevSlide);
 
-    // Adiciona clique nos indicadores
+    
     indicadores.forEach((ind, index) => {
         ind.addEventListener('click', () => {
             currentIndex = index;
@@ -90,10 +90,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Auto-rotate (opcional)
+    
     let interval = setInterval(nextSlide, 5000);
 
-    // Pausa quando o mouse está sobre o carrossel
+   
     carrossel.addEventListener('mouseenter', () => {
         clearInterval(interval);
     });

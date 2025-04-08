@@ -254,7 +254,7 @@
 
 .containerOferta {
   display: flex;
-  background-color: #e7e7ea;
+  background-color: #E7E7EA;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -286,19 +286,28 @@
   padding: 5rem;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #005cff;
-  border-radius: 50%;
-  padding: 20px; 
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  z-index: 10;
+  padding: 0;
 }
 
-
-.carousel-control-prev:hover .carousel-control-prev-icon,
-.carousel-control-next:hover .carousel-control-next-icon {
-  background-color: #003d99; 
+.carousel-arrow img {
+  width: 40px; /* ajuste como quiser */
+  height: auto;
 }
 
+.carousel-arrow.prev {
+  left: 10px;
+}
+
+.carousel-arrow.next {
+  right: 10px;
+}
 .carousel-indicators .active {
   background-color: black !important;
   width: 14px;
