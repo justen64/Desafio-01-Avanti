@@ -284,29 +284,6 @@
                 </div>
               </div>
             </div>
-            <button
-              class="carousel-arrow prev"
-              type="button"
-              data-bs-target="#promoCarousel"
-              data-bs-slide="prev"
-            >
-              <img
-                src="../../assets/seta-esquerda.png"
-                alt="seta para esquerda"
-              />
-            </button>
-
-            <button
-              class="carousel-arrow next"
-              type="button"
-              data-bs-target="#promoCarousel"
-              data-bs-slide="next"
-            >
-              <img
-                src="../../assets/seta-direita.png"
-                alt="seta para direita"
-              />
-            </button>
 
             <div class="carousel-indicators">
               <button
@@ -331,8 +308,18 @@
         </section>
       </div>
       <section class="containerCards">
-        <h4>Lançamentos</h4>
+        <div class="caixaTextoCards">
+          <h4><strong>Lançamentos</strong></h4>
+          <a href="">Ver mais</a>
+        </div>
         <div id="products-container" class="product-grid"></div>
+        <div class="caixaIndicadores" data-carousel="0">
+          <div class="indicators">
+            <button type="button" class="indicator-btn"></button>
+            <button type="button" class="indicator-btn"></button>
+            <button type="button" class="indicator-btn active"></button>
+          </div>
+        </div>
       </section>
       <section class="infoCopo">
         <div class="image-container">
@@ -343,7 +330,7 @@
           />
         </div>
         <div class="text-container">
-          <h2>LOREM IPSUM</h2>
+          <h2><strong>LOREM IPSUM</strong></h2>
           <p>
             <!-- feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico -->
 
@@ -351,10 +338,6 @@
             Mauris vitae finibus dui. Mauris laoreet lacus ut<br />
             eleifend viverra. Cras efficitur volutpat dui, in lobortis<br />
             metus lacinia sit amet. Sed lacinia pharetra magna, vel<br />
-            pulvinar ligula hendrerit a. Maceenas fringilla porttitor<br />
-            tortor eget lacinia. Donec sollicitudin euismod orci,<br />
-            auctor fringilla magna consequat interdum. Fusce<br />
-            sagittis elit a libero commodo egestas efficitur id<br />
             augue.
           </p>
           <p>
@@ -362,10 +345,6 @@
             Mauris vitae finibus dui. Mauris laoreet lacus ut<br />
             eleifend viverra. Cras efficitur volutpat dui, in lobortis<br />
             metus lacinia sit amet. Sed lacinia pharetra magna, vel<br />
-            pulvinar ligula hendrerit a. Maceenas fringilla porttitor<br />
-            tortor eget lacinia. Donec sollicitudin euismod orci,<br />
-            auctor fringilla magna consequat interdum. Fusce<br />
-            sagittis elit a libero commodo egestas efficitur id<br />
             augue.
           </p>
         </div>
@@ -373,7 +352,7 @@
       <section class="infoCozinha">
         <div class="cozinhaContainer">
           <div class="textoCozinha">
-            <h1>LOREM IPSUM</h1>
+            <h1><strong>LOREM IPSUM</strong></h1>
             <div class="containerLocalizacao">
               <img
                 class="imgLocalizacao"
@@ -439,16 +418,14 @@
           />
         </div>
         <div class="text-container">
-          <h2>LOREM IPSUM</h2>
+          <h2><strong>LOREM IPSUM</strong></h2>
           <p>
+            <!-- feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico -->
+
             Duis consectetur metus nec lacus auctor dignissim.<br />
             Mauris vitae finibus dui. Mauris laoreet lacus ut<br />
             eleifend viverra. Cras efficitur volutpat dui, in lobortis<br />
             metus lacinia sit amet. Sed lacinia pharetra magna, vel<br />
-            pulvinar ligula hendrerit a. Maceenas fringilla porttitor<br />
-            tortor eget lacinia. Donec sollicitudin euismod orci,<br />
-            auctor fringilla magna consequat interdum. Fusce<br />
-            sagittis elit a libero commodo egestas efficitur id<br />
             augue.
           </p>
           <p>
@@ -456,17 +433,23 @@
             Mauris vitae finibus dui. Mauris laoreet lacus ut<br />
             eleifend viverra. Cras efficitur volutpat dui, in lobortis<br />
             metus lacinia sit amet. Sed lacinia pharetra magna, vel<br />
-            pulvinar ligula hendrerit a. Maceenas fringilla porttitor<br />
-            tortor eget lacinia. Donec sollicitudin euismod orci,<br />
-            auctor fringilla magna consequat interdum. Fusce<br />
-            sagittis elit a libero commodo egestas efficitur id<br />
             augue.
           </p>
         </div>
       </section>
-      <section class="containerCards">
-        <h4>Lançamentos</h4>
+      <section class="containerCards d-none d-lg-block">
+        <div class="caixaTextoCards">
+          <h4><strong>Lançamentos</strong></h4>
+          <a href="">Ver mais</a>
+        </div>
         <div id="products-container2" class="product-grid"></div>
+        <div class="caixaIndicadores" data-carousel="1">
+          <div class="indicators">
+            <button type="button" class="indicator-btn"></button>
+            <button type="button" class="indicator-btn"></button>
+            <button type="button" class="indicator-btn active"></button>
+          </div>
+        </div>
       </section>
       <section class="contatoContainer">
         <div class="contatoContent">
@@ -478,7 +461,7 @@
       </section>
 
       <section class="newsletter-horizontal">
-        <h1>Cadastre-se na nossa newsletter</h1>
+        <h1><strong>Cadastre-se na nossa <span class="newsletterCor">newsletter</span></strong> </h1>
 
         <form class="newsletter-form-horizontal">
           <input type="text" placeholder="Digite seu nome" />
@@ -503,53 +486,73 @@
         <div class="footer-grid">
           <div class="footer-col logo-social-col">
             <div class="footer-logo-container">
-              <img
-                src="../../assets/Logo-Avanti.png"
-                alt="AVANTI"
-                class="footer-logo"
-              />
+              <img src="../../assets/Logo-Avanti.png" alt="AVANTI" class="footer-logo" />
             </div>
             <div class="social-media">
-              <a href="http://instagram.com/penseavanti/" target="_blank"
-                ><img src="../../assets/instagram.png" alt="Instagram"
-              /></a>
-              <a
-                href="https://www.facebook.com/penseavanti?locale=pt_BR"
-                target="_blank"
-                ><img src="../../assets/facebook.png" alt="Facebook"
-              /></a>
-              <a
-                href="https://www.youtube.com/channel/UCssWsl1C3_-JQXd8H1LOjiA"
-                target="_blank"
-                ><img src="../../assets/youtube.png" alt="YouTube"
-              /></a>
+              <a href="http://instagram.com/penseavanti/" target="_blank">
+                <img src="../../assets/instagram.png" alt="Instagram" />
+              </a>
+              <a href="https://www.facebook.com/penseavanti?locale=pt_BR" target="_blank">
+                <img src="../../assets/facebook.png" alt="Facebook" />
+              </a>
+              <a href="https://www.youtube.com/channel/UCssWsl1C3_-JQXd8H1LOjiA" target="_blank">
+                <img src="../../assets/youtube.png" alt="YouTube" />
+              </a>
               <a href="#"><img src="../../assets/tiktok.png" alt="TikTok" /></a>
             </div>
           </div>
-
-          <div class="footer-col">
-            <h3>AVANTI</h3>
+    
+          <div class="footer-col d-none d-lg-block">
+            <h3> Institucional</h3>
             <ul>
-              <li><a href="#">Individualista</a></li>
               <li><a href="#">Sober Nós</a></li>
-              <li><a href="#">Mostral Lúdica</a></li>
+              <li><a href="#">Nossas Lojas</a></li>
+              <li><a href="#">Privacidade e Segurança</a></li>
               <li><a href="#">Parceria & Segurança</a></li>
               <li><a href="#">Termos e Condições</a></li>
             </ul>
           </div>
-
-          <div class="footer-col">
+          <div class="footer-col d-lg-none">
+            <div class="caixaSeta collapsed" data-bs-toggle="collapse" data-bs-target="#collapseAvanti" aria-expanded="false">
+              <h3>
+                Institucional
+              </h3>
+              <img src="../../assets/seta-baixo.png" alt="Seta" class="seta-img" />
+            </div>
+            <ul id="collapseAvanti" class="collapse">
+              <li><a href="#">Sober Nós</a></li>
+              <li><a href="#">Nossas Lojas</a></li>
+              <li><a href="#">Privacidade e Segurança</a></li>
+              <li><a href="#">Parceria & Segurança</a></li>
+              <li><a href="#">Termos e Condições</a></li>
+            </ul>
+          </div>
+     
+          <div class="footer-col d-none d-lg-block">
             <h3>Central de ajuda</h3>
             <ul>
               <li><a href="#">Fale Conosco</a></li>
+              <li><a href="#">Frete e Entrega</a></li>
               <li><a href="#">Trocas e Devoluções</a></li>
-              <li><a href="#">Termos e Privacidade</a></li>
               <li><a href="#">Formas de Pagamento</a></li>
               <li><a href="#">FAQ</a></li>
             </ul>
           </div>
-
-          <div class="footer-col">
+          <div class="footer-col d-lg-none">
+            <div class="caixaSeta collapsed" data-bs-toggle="collapse" data-bs-target="#collapseAjuda" aria-expanded="false">
+              <h3>Central de ajuda</h3>
+              <img src="../../assets/seta-baixo.png" alt="Seta" class="seta-img" />
+            </div>
+            <ul id="collapseAjuda" class="collapse">
+              <li><a href="#">Fale Conosco</a></li>
+              <li><a href="#">Frete e Entrega</a></li>
+              <li><a href="#">Trocas e Devoluções</a></li>
+              <li><a href="#">Formas de Pagamento</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+           </div>
+    
+          <div class="footer-col d-none d-lg-block">
             <h3>Atendimento</h3>
             <ul>
               <li>Telefone: (00) 1234-5678</li>
@@ -559,9 +562,25 @@
               <li>Domingos e Feriados: 07h às 23h</li>
             </ul>
           </div>
+          <div class="footer-col d-lg-none">
+            <div class="caixaSeta collapsed" data-bs-toggle="collapse" data-bs-target="#collapseAtendimento" aria-expanded="false">
+              <h3>
+                Atendimento
+              </h3>
+              <img src="../../assets/seta-baixo.png" alt="Seta" class="seta-img" />
+            </div>
+            <ul id="collapseAtendimento" class="collapse">
+              <li>Telefone: (00) 1234-5678</li>
+              <li>E-mail: contato@avanti.com.br</li>
+              <li>Horário de atendimento:</li>
+              <li>Segunda a Sábado: 07h às 23h</li>
+              <li>Domingos e Feriados: 07h às 23h</li>
+            </ul>
+           </div>
+        </div>
         </div>
       </div>
-
+    
       <div class="payment-section">
         <div class="payment-methods">
           <img src="../../assets/amex.png" alt="Visa" />

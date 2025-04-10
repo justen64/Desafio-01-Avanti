@@ -254,7 +254,7 @@
 
 .containerOferta {
   display: flex;
-  background-color: #E7E7EA;
+  background-color: #e7e7ea;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -286,6 +286,31 @@
   padding: 5rem;
 }
 
+.caixaTextoCards {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+}
+
+.caixaTextoCards a{
+  color: #000;
+}
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+  max-height: 50%;
+}
+
+.text-container h2{
+  font-size: 22px;
+}
+
+
+.text-container p{
+  font-size: 14px;
+}
+
 .carousel-arrow {
   position: absolute;
   top: 50%;
@@ -297,7 +322,7 @@
 }
 
 .carousel-arrow img {
-  width: 40px; /* ajuste como quiser */
+  width: 2.5rem;
   height: auto;
 }
 
@@ -308,19 +333,65 @@
 .carousel-arrow.next {
   right: 10px;
 }
+.carousel-indicators [data-bs-target] {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  background-color: #000 !important;
+  border: none;
+  margin: 0 4px;
+  opacity: 0.6;
+  transition: opacity 0.3s, background-color 0.3s;
+}
+
 .carousel-indicators .active {
-  background-color: black !important;
-  width: 14px;
-  height: 14px;
+  background-color: #000;
+  opacity: 1;
+}
+
+.caixaIndicadores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.indicators {
+  display: flex;
+  gap: 8px;
+}
+
+.indicator-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #000;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.indicator-btn:hover {
+  opacity: 0.7;
+}
+
+.indicator-btn.active {
+  background-color: #000;
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 .infoCopo {
   display: flex;
   max-width: 75rem;
   margin: 2rem auto;
+  justify-content: center;
   gap: 2.5rem;
   align-items: center;
   padding: 0 1.25rem;
+  font-size: 0.875rem;
 }
 
 .imgCopo {
@@ -354,15 +425,20 @@
 .cozinhaContainer {
   display: flex;
   gap: 9.375rem;
+  align-items: flex-end;
 }
 
 .textoCozinha {
   display: flex;
   flex-direction: column;
-  gap: 3.125rem;
+  gap: 1.875rem;
+  font-size: 0.875rem;
+  margin-bottom: 1.5625rem;
 }
 .textoCozinha h1 {
-  align-self: flex-end;
+  align-self: center;
+  font-size: 1.375rem;
+  margin-left: 7.5rem;
 }
 
 .containerLocalizacao {
@@ -373,8 +449,8 @@
 }
 
 .imgLocalizacao {
-  width: 12%;
-  height: 42%;
+  width: 15%;
+  height: 49%;
 }
 
 .contatoContainer {
@@ -388,8 +464,15 @@
   text-align: center;
 }
 
+.newsletterCor{
+  color: #005cff;
+}
+
 .contatoContent {
   min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #005cff;
   color: #ffffff;
   margin-top: 15.625rem;
@@ -455,7 +538,7 @@
 }
 
 .checkbox-container a {
-  color: #005cff;
+  color: #000;
   text-decoration: none;
 }
 
@@ -525,7 +608,7 @@
 }
 
 .footer-col h3 {
-  color: #0056b3;
+  color: #000;
   font-size: 1.125rem;
   margin-bottom: 1.25rem;
   font-weight: 600;
@@ -557,13 +640,13 @@
   text-align: center;
   margin: 2.5rem 0 1.875rem;
 }
-/* feito por Rodrigo justen gitHub: justen64/ comentario botado para evitar plagio por ser um desafio publico */
 
 .payment-methods {
   display: flex;
   justify-content: center;
   gap: 1.25rem;
   flex-wrap: wrap;
+  padding: 0 1rem;
 }
 
 .payment-methods img {
@@ -604,13 +687,38 @@
 }
 
 .footer-bottom img {
-  height: 30px;
+  height: 20px;
 }
 
 .avtLogo {
   width: 5.9375rem;
   height: 5.3125rem;
 }
+
+.caixaSeta{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.caixaSeta img{
+  width: 1.5rem;
+  height: 1rem;
+}
+
+.seta-img {
+  transition: transform 0.3s ease;
+}
+
+
+.caixaSeta[aria-expanded="true"] .seta-img {
+  transform: rotate(180deg);
+}
+
+.textoFooter{
+  color: #000;
+}
+
 
 @media screen and (min-width: 1200px) {
   :root {
@@ -702,14 +810,18 @@
     text-align: center;
   }
 
-  .infoCopo,
-  .cozinhaContainer {
+  .infoCopo{
     flex-direction: column;
+    gap: 1.5rem;
+  }
+  .cozinhaContainer {
+    flex-direction: column-reverse;
     gap: 1.5rem;
   }
 
   .textoCozinha h1 {
     align-self: center;
+    margin-left: 0;
   }
 
   .containerLocalizacao {
@@ -726,6 +838,8 @@
     height: auto;
     padding: 1rem;
   }
+
+
 }
 
 @media screen and (max-width: 576px) {
@@ -743,6 +857,39 @@
 
   .payment-methods img {
     height: 1rem;
+  }
+
+  .payment-methods {
+    display: grid;
+    gap: 1.5625rem;
+    
+  }
+
+  .payment-methods img {
+    height: 1.5rem;
+  }
+
+  .payment-methods img:nth-child(6) {
+    grid-column: 2;
+  }
+
+  .payment-methods img:nth-child(7) {
+    grid-column: 3;
+  }
+
+  .payment-methods img:nth-child(8) {
+    grid-column: 4;
+  }
+
+  .payment-methods img:nth-child(9) {
+    grid-column: 5;
+  }
+  
+  .text-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.25rem;
   }
 }
 
@@ -775,6 +922,17 @@ img {
   }
   .cadeiraImg {
     width: 50%;
+  }
+  .social-media {
+    display: flex;
+    margin-left: 70px;
+    gap: 2.5rem;
+  }
+  .logo-social-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
   }
 }
 
@@ -842,3 +1000,4 @@ img {
     width: 50%;
   }
 }
+
