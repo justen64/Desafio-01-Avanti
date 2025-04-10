@@ -671,7 +671,8 @@
 .footer-bottom {
   display: flex;
   width: 100%;
-  flex-direction: row;
+  background-color: #ffffff;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.25rem;
@@ -688,6 +689,12 @@
 
 .footer-bottom img {
   height: 20px;
+}
+
+.imgFooterBottom{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
 }
 
 .avtLogo {
