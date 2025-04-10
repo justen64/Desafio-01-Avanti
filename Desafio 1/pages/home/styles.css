@@ -18,6 +18,7 @@
   font-size: 0.875rem;
   line-height: 1.375rem;
   letter-spacing: 0%;
+  height: 2.5rem;
 }
 .descontoContainer .desconto {
   background-color: #6220c1;
@@ -275,8 +276,14 @@
   font-size: 3.125rem;
 }
 
-.containerTextoOferta p {
+.containerTextoOferta h3 {
   color: #005cff;
+
+}
+
+.containerTextoOferta h2 {
+  color: #005cff;
+
 }
 
 .containerCards {
